@@ -1,8 +1,6 @@
 package udacity.android_nanodegree.myappportfolio;
 
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
@@ -23,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         //from here onwards we are creating 6 buttons and setting toast message for each one
-        Button button1 = (Button) findViewById(R.id.button1);
+        Button button1 = (Button) findViewById(R.id.spotifyStreamerButton);
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -32,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button button2 = (Button) findViewById(R.id.button2);
+        Button button2 = (Button) findViewById(R.id.footballScoresButton);
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -41,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button button3 = (Button) findViewById(R.id.button3);
+        Button button3 = (Button) findViewById(R.id.libraryButton);
         button3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -50,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button button4 = (Button) findViewById(R.id.button4);
+        Button button4 = (Button) findViewById(R.id.BuildItBiggerButton);
         button4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -59,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button button5 = (Button) findViewById(R.id.button5);
+        Button button5 = (Button) findViewById(R.id.xyzReaderButton);
         button5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -68,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button button6 = (Button) findViewById(R.id.button6);
+        Button button6 = (Button) findViewById(R.id.capstoneButton);
         button6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appBackground"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#e0f7fa"
     tools:context="udacity.android_nanodegree.myappportfolio.MainActivity">
 
     <android.support.design.widget.AppBarLayout
@@ -17,12 +22,11 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="#212121"
+            android:background="@color/actionBarColour"
             app:popupTheme="@style/AppTheme.PopupOverlay" />
 
     </android.support.design.widget.AppBarLayout>
 
-    <!--include layout="@layout/content_main" /-->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -33,57 +37,34 @@
         android:textSize="25dp"/>
 
     <Button
-        android:id="@+id/button1"
-        android:layout_width="@dimen/button_width"
-        android:layout_height="@dimen/button_height"
-        android:layout_gravity="center"
-        android:layout_margin="@dimen/margin"
-        android:background="@color/buttonColour"
-        android:text="Spotify Streamer"/>
+        android:id="@+id/spotifyStreamerButton"
+        style="@style/Widget.Button"
+        android:text="@string/spotify"/>
 
     <Button
-        android:id="@+id/button2"
-        android:layout_width="@dimen/button_width"
-        android:layout_height="@dimen/button_height"
-        android:layout_gravity="center"
-        android:layout_margin="@dimen/margin"
-        android:background="@color/buttonColour"
-        android:text="Football Scores App"/>
+        android:id="@+id/footballScoresButton"
+        style="@style/Widget.Button"
+        android:text="@string/scores"/>
 
     <Button
-        android:id="@+id/button3"
-        android:layout_width="@dimen/button_width"
-        android:layout_height="@dimen/button_height"
-        android:layout_gravity="center"
-        android:layout_margin="@dimen/margin"
-        android:background="@color/buttonColour"
-        android:text="Library App"/>
+        android:id="@+id/libraryButton"
+        style="@style/Widget.Button"
+        android:text="@string/library"/>
 
     <Button
-        android:id="@+id/button4"
-        android:layout_width="@dimen/button_width"
-        android:layout_height="@dimen/button_height"
-        android:layout_gravity="center"
-        android:layout_margin="@dimen/margin"
-        android:background="@color/buttonColour"
-        android:text="Build It Bigger"/>
+        android:id="@+id/BuildItBiggerButton"
+        style="@style/Widget.Button"
+        android:text="@string/bigger"/>
 
     <Button
-        android:id="@+id/button5"
-        android:layout_width="@dimen/button_width"
-        android:layout_height="@dimen/button_height"
-        android:layout_gravity="center"
-        android:layout_margin="@dimen/margin"
-        android:background="@color/buttonColour"
-        android:text="XYZ Reader"/>
+        android:id="@+id/xyzReaderButton"
+        style="@style/Widget.Button"
+        android:text="@string/xyz_reader"/>
 
     <Button
-        android:id="@+id/button6"
-        android:layout_width="@dimen/button_width"
-        android:layout_height="@dimen/button_height"
-        android:layout_gravity="center"
-        android:layout_margin="@dimen/margin"
-        android:background="@color/buttonColour"
-        android:text="Capstone: My Own App"/>
+        android:id="@+id/capstoneButton"
+        style="@style/Widget.Button"
+        android:text="@string/capstone"/>
 
 </LinearLayout>
+</ScrollView>
